@@ -1,8 +1,8 @@
 {
-  "id": "icon_cloud",
+  "id": "image_block",
   "type": "SharedSlice",
-  "name": "IconCloud",
-  "description": "IconCloud",
+  "name": "ImageBlock",
+  "description": "ImageBlock",
   "variations": [
     {
       "id": "default",
@@ -12,11 +12,12 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "heading": {
-          "type": "Text",
+        "image": {
+          "type": "Image",
           "config": {
-            "label": "Heading",
-            "placeholder": ""
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

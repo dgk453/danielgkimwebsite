@@ -7,13 +7,14 @@ import { SliceZone } from "@prismicio/react";
 
 import { components } from "../../slices";
 
-export default function SliceSimulatorPage({
+export default async function SliceSimulatorPage({
   searchParams,
 }: SliceSimulatorParams) {
-  const slices = getSlices(searchParams.state);
+  const { state } = await searchParams;
+  const slices = getSlices(state);
 
   return (
-    <SliceSimulator>
+    <SliceSimulator background="#121b2f">
       <SliceZone slices={slices} components={components} />
     </SliceSimulator>
   );
